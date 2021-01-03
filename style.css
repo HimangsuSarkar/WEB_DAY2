@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+header{
+    width: 100%;
+    height: 100px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: aqua;
+  
+  
+}
+.navbar ul li{
+    display: inline-block;
+    border-right: 2px solid red;
+}
+.navbar ul li:last-child{
+    border-right:none;
+}
+.active{
+    background-color: rgb(0, 81, 128);
+}
+.navbar ul li a{
+    display:block;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+
+}
+.navbar ul li a:hover:not(.active){
+    color: chocolate;
+    text-decoration: underline;
+}
+
+.picture{
+    max-width: 70%;
+    margin: auto;
+   
+}
+.picture img{
+    max-width: 100%;
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+}
+#history{
+    max-width: 100%;
+    height:400px;
+    display: block;
+    background-color: rgb(200, 243, 243);
+}
+.main{
+    width: 65%;
+    border: 2px solid red;
+    margin: 25px;
+    float: left;
+    padding: 10px;
+    background-color: rgb(40, 58, 47);
+    color: snow;
+}
+.main h2{
+    font-size: 35px;
+    border-bottom: 2px solid royalblue;
+    margin-bottom: 5px;
+}
+.main p{
+    font-size: 25px;
+}
+aside{
+    width: 30%;
+    border: 2px solid red;
+    margin: 25px 5px;
+    float: left;
+    padding: 10px;
+    background-color: wheat;
+}
+aside ul{
+    list-style-position: inside;
+    margin-top: 20px;
+}
+aside ul li{
+    line-height:30px;
+}
+.division{
+    max-width: 100%;
+    background-color: green;
+    height:450px;
+}
+.catalog{
+    width:30%;
+    border: 2px solid #46ee25;
+    margin:20px;
+    border-radius: 20px;
+    float: left;
+    padding: 20px;
+    background-color: red;
+    color: white;
+}
+.catalog h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid green;
+}
+.catalog p{
+    font-size: 22px;
+    text-align: justify;
+}
